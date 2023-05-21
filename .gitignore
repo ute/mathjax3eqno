@@ -6,4 +6,4 @@
 *.aux
 *.log
 *.tex
-!_extensions/mathjax3/assets/*.*
+!_extensions/mathjax3eqno/assets/*.*

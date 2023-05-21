@@ -1,4 +1,4 @@
-# Mathjax3 Extension For Quarto
+# Mathjax3Eqno Extension For Quarto
 
 This filter adds features for complex mathematical equations and equation numbering from MathJax3, as suggested by @eeholmes [here](https://github.com/quarto-dev/quarto-cli/issues/4136).
 It is mainly meant as a proof-of-concept, but might be useful for the time being :-).
@@ -19,7 +19,7 @@ The filter transforms markdown equations into LaTeX equations that are handled b
 ## Installing
 
 ```bash
-quarto add ute/mathjax3
+quarto add ute/mathjax3eqno
 ```
 
 This will install the extension under the `_extensions` subdirectory.
@@ -32,7 +32,7 @@ Then write and refer to equations as you would do in LaTeX. Labelled markdown eq
 
 ```text
 ---
-filters: [mathjax3]
+filters: [mathjax3eqno]
 number-sections: true
 ---
 # Intro
@@ -48,6 +48,10 @@ Refer to \eqref{eq-toinf} and solve
 \end{equation}
 
 ```
+
+renders as
+
+![image](https://github.com/ute/mathjax3/assets/5145859/1cdccc8d-62ab-4c2b-a9fb-0d6f07c5c683)
 
 Here is the source code for a minimal example: [example.qmd](example.qmd).
 

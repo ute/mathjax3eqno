@@ -1,7 +1,7 @@
 ---
-title: "Mathjax3 Example"
+title: "Mathjax3 Equation Numbers Example"
 filters:
-  - mathjax3
+  - mathjax3eqno
 number-sections: true  
 ---
 
