@@ -1,0 +1,9 @@
+*.html
+*.pdf
+*_files/
+/.luarc.json
+*.docx
+*.aux
+*.log
+*.tex
+!_extensions/mathjax3/assets/*.*

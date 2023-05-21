@@ -1,0 +1,35 @@
+---
+title: "Mathjax3 Example"
+filters:
+  - mathjax3
+number-sections: true  
+---
+
+# Intro
+Here we look at Equations \eqref{tonull}, \eqref{eq-toinf} and \eqref{eq-toone}. 
+
+\begin{equation} \label{tonull} \tag{$\ast$}
+   \lim_{n\to\infty} \exp(-n) = 0
+\end{equation}
+
+and
+$$
+ \lim_{n\to\infty} \frac{n+1}{n} = 1
+$${#eq-toone}
+
+# Second section
+Here is another important equation:
+$$ 
+   \lim_{n\to\infty} \exp(n) = \infty \tag{$\infty$}
+$${#eq-toinf}
+
+and never forget to mention
+\begin{equation}
+a^2 + b^2 = c^2
+\end{equation}
+
+or
+$$
+  e = mc^2
+$${#eq-emc2}  
+
