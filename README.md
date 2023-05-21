@@ -52,9 +52,5 @@ renders as
 
 ![image](https://github.com/ute/mathjax3/assets/5145859/1cdccc8d-62ab-4c2b-a9fb-0d6f07c5c683)
 
-renders as
-
-![image](https://github.com/ute/mathjax3/assets/5145859/1cdccc8d-62ab-4c2b-a9fb-0d6f07c5c683)
-
 Here is the source code for a minimal example: [example.qmd](example.qmd).
 
