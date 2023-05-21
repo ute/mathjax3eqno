@@ -15,7 +15,8 @@ The filter transforms markdown equations into LaTeX equations that are handled b
 - Equations can only be referenced via LaTeX `\ref` or `\eqref`; quarto markdown references via `@eq-` are no longer working,
 - All LaTeX equations are numbered. Markdown equations are only numbered if they have a reference label,
 - The **only** supported output formats are **pdf and html**,
-- it requires MathJax3, therefore quarto $\geq 1.3.x$, where $x$ is unknown (I have x = 353)
+- It does **not** (yet) work for **html-books**: numbering starts in each chapter with 1 again. Please write / vote for an issue or send a PR if you desperately want to use the extension with books. This would require a more extensive hack...
+- it requires MathJax3, therefore quarto $\geq 1.3.x$, where $x$ is unknown (I have $x = 353$)
 
 ## Installing
 
