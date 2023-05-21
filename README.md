@@ -35,19 +35,22 @@ Then write and refer to equations as you would do in LaTeX. Labelled markdown eq
 filters: [mathjax3eqno]
 number-sections: true
 ---
-# Intro
+# First Section
 First equation
 $$
    \lim_{n\to\infty} \exp(n) = \infty
 $${#eq-toinf}
 
-# Second section
+# Second Section
 Refer to \eqref{eq-toinf} and solve
 \begin{equation}
   e = mc^2
 \end{equation}
 
 ```
+renders as
+
+![image](https://github.com/ute/mathjax3/assets/5145859/1cdccc8d-62ab-4c2b-a9fb-0d6f07c5c683)
 
 renders as
 
