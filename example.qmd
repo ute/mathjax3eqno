@@ -19,7 +19,7 @@ $${#eq-toone}
 
 # Second section
 Here is another important equation:
-$$ 
+$$
    \lim_{n\to\infty} \exp(n) = \infty \tag{$\infty$}
 $${#eq-toinf}
 
@@ -27,9 +27,17 @@ and never forget to mention
 \begin{equation}
 a^2 + b^2 = c^2
 \end{equation}
-
+where
+\begin{align}
+  \notag a&= 3\\
+  b&=4
+\end{align}
 or
 $$
   e = mc^2
 $${#eq-emc2}  
 
+but this one is unnumbered:
+\begin{equation*}
+  1 + 1 = 4 
+\end{equation*}
