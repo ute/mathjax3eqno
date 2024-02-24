@@ -43,16 +43,22 @@ $$
    \lim_{n\to\infty} \exp(n) = \infty
 $${#eq-toinf}
 
+And another one:
+$$
+  a^2 + b^2 = c^2 \tag{$\ast$}
+  \label{eq-py}
+$$
+
 # Second Section
 Refer to \eqref{eq-toinf} and solve
 \begin{equation}
   e = mc^2
 \end{equation}
-
+Then ponder about \eqref{eq-py}
 ```
 renders as
 
-![image](https://github.com/ute/mathjax3/assets/5145859/1cdccc8d-62ab-4c2b-a9fb-0d6f07c5c683)
+![image](https://github.com/ute/mathjax3eqno/assets/5145859/3c6b6353-7384-4777-91b1-46cbebde662a)
 
 Here is the source code for a minimal example: [example.qmd](example.qmd).
 
