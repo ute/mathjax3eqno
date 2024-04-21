@@ -33,6 +33,8 @@ where
   b&=4
 \end{align}
 or
+
+## Einstein!
 $$
   e = mc^2
 $${#eq-emc2}  
@@ -41,3 +43,8 @@ but this one is unnumbered:
 \begin{equation*}
   1 + 1 = 4 
 \end{equation*}
+
+
+$$\setSection5
+a=b
+$${#eq-emc2a}  

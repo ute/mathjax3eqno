@@ -2,6 +2,8 @@
   For MathJax 3+ Eqns nums with section numbers
   suggested to use in quarto by Eli Holmes on 
   https://github.com/quarto-dev/quarto-cli/issues/4136 
+  Setting section: necessary for books. See
+  https://docs.mathjax.org/en/latest/input/tex/extensions/tagformat.html
 */
   MathJax = {
     loader: {load: ['[tex]/tagformat']},
@@ -18,11 +20,16 @@
         const Configuration = MathJax._.input.tex.Configuration.Configuration;
         const CommandMap = MathJax._.input.tex.SymbolMap.CommandMap;
         new CommandMap('sections', {
-          nextSection: 'NextSection'
+          nextSection: 'NextSection',
+          setSection: 'SetSection'
         }, {
           NextSection(parser, name) {
             MathJax.config.section++;
             parser.tags.counter = parser.tags.allCounter = 0;
+          },
+          SetSection(parser, name) {
+            const n = parser.GetArgument(name);
+            MathJax.config.section = parseInt(n);
           }
         });
         Configuration.create(
