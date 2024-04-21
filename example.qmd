@@ -44,7 +44,7 @@ but this one is unnumbered:
   1 + 1 = 4 
 \end{equation*}
 
-The next equation set section number manually
+The next equation features a manual section prefix number *in html format*. Command `setNewSection` is meant as a workaround for quarto books. Equation numbering by section does work when rendering to pdf.
 
 $$\setNewSection{17}
 0 = 0
