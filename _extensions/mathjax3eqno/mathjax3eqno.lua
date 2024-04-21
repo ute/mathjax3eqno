@@ -77,7 +77,7 @@ function Pandoc(doc)
     for i, blk in ipairs(doc.blocks) do
       if blk.t=="Header" then
         table.insert(newblocks, blk)
-        if quarto.doc.is_format("html") and not firstheader then
+        if quarto.doc.is_format("html") and not firstheader and (blk.level == 1) then
           local incdiv = pandoc.RawInline("html", 
             '<div style="display:none"><span class="math inline">\\(\\nextSection\\)</span></div>')
           table.insert(newblocks, incdiv)
