@@ -44,7 +44,8 @@ but this one is unnumbered:
   1 + 1 = 4 
 \end{equation*}
 
+The next equation set section number manually
 
-$$\setSection5
-a=b
-$${#eq-emc2a}  
+$$\setNewSection{17}
+0 = 0
+$${#eq-truezero}  

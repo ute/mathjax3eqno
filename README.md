@@ -15,7 +15,7 @@ The filter transforms markdown equations into LaTeX equations that are handled b
 - Equations can only be referenced via LaTeX `\ref` or `\eqref`; quarto markdown references via `@eq-` are no longer working,
 - All LaTeX equations are numbered, unless you use the starred version `\begin{equation*}` or `\notag`. Markdown equations are only numbered if they have a reference label,
 - The **only** supported output formats are **pdf and html**,
-- It does **not** (yet) work as one would expect for **html-books**: section numbering starts in each chapter with 1 again, not with the chapter number. Please write / vote for an issue or send a PR if you desperately want to use the extension with books. This would require a more extensive hack... Update: I have gotten a vote for this and will implement the book feature soonish (spring 2024). If you are faster, send a PR
+- It does **not** (yet) work automatically as one would expect for **html-books**. *News:*  there is a workaround: In the first equation, add command `\setNewSection` followed by the section number, e.g. `\setNewSection{17}`. This sets the prefix, and restarts counting. It is only necessary once per book chapter.
 - it requires MathJax3, therefore quarto $\geq 1.3.x$, where $x$ is unknown (I have $x = 353$)
 - Does not work with parse-latex extension, use [parse-latex-noeq](https://github.com/ute/parse-latex-noeq) instead.
 
