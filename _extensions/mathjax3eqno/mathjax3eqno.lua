@@ -2,6 +2,7 @@
 local pout = quarto.log.output
 local str = pandoc.utils.stringify
 
+local isbook = false
 --pout("hallo?")
 --return{{
 
@@ -44,6 +45,7 @@ end
 -- and after all, mathjax is default and this is only a proof of concept
 --[[ ]]
 function Meta(m)
+  isbook = m.book ~=nil
   if quarto.doc.is_format("html")
   then 
     if m.format then if m.format.html then if m.format.html["html-math-method"] then
@@ -68,7 +70,10 @@ function Pandoc(doc)
     })
   elseif quarto.doc.is_format("pdf")
     then 
-      quarto.doc.include_file("in-header", 'assets/mathjax3-preamble.tex')
+      if isbook then
+        quarto.doc.include_file("in-header", 'assets/mathjax3-preamble-book.tex')
+      else quarto.doc.include_file("in-header", 'assets/mathjax3-preamble.tex')
+      end  
   end 
   
   -- walk headers if in html: add div that call to mathjax 
